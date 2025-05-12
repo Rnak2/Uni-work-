@@ -1,0 +1,15 @@
+/Users/samborathanak/Desktop/SIT221/6.2/bin/Debug/net6.0/6.2
+/Users/samborathanak/Desktop/SIT221/6.2/bin/Debug/net6.0/6.2.deps.json
+/Users/samborathanak/Desktop/SIT221/6.2/bin/Debug/net6.0/6.2.runtimeconfig.json
+/Users/samborathanak/Desktop/SIT221/6.2/bin/Debug/net6.0/6.2.dll
+/Users/samborathanak/Desktop/SIT221/6.2/bin/Debug/net6.0/6.2.pdb
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.csproj.AssemblyReference.cache
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.AssemblyInfoInputs.cache
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.AssemblyInfo.cs
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.csproj.CoreCompileInputs.cache
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.dll
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/refint/6.2.dll
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.pdb
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/6.2.genruntimeconfig.cache
+/Users/samborathanak/Desktop/SIT221/6.2/obj/Debug/net6.0/ref/6.2.dll
