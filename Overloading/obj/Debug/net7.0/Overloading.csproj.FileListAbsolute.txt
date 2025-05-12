@@ -1,0 +1,15 @@
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.csproj.AssemblyReference.cache
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.AssemblyInfoInputs.cache
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.AssemblyInfo.cs
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.csproj.CoreCompileInputs.cache
+/Users/samborathanak/Desktop/Projects/Overloading/bin/Debug/net7.0/Overloading
+/Users/samborathanak/Desktop/Projects/Overloading/bin/Debug/net7.0/Overloading.deps.json
+/Users/samborathanak/Desktop/Projects/Overloading/bin/Debug/net7.0/Overloading.runtimeconfig.json
+/Users/samborathanak/Desktop/Projects/Overloading/bin/Debug/net7.0/Overloading.dll
+/Users/samborathanak/Desktop/Projects/Overloading/bin/Debug/net7.0/Overloading.pdb
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.dll
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/refint/Overloading.dll
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.pdb
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/Overloading.genruntimeconfig.cache
+/Users/samborathanak/Desktop/Projects/Overloading/obj/Debug/net7.0/ref/Overloading.dll

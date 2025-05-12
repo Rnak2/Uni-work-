@@ -1,0 +1,60 @@
+/Users/samborathanak/Desktop/Projects/Validating Accounts/bin/Debug/net7.0/Validating Accounts
+/Users/samborathanak/Desktop/Projects/Validating Accounts/bin/Debug/net7.0/Validating Accounts.deps.json
+/Users/samborathanak/Desktop/Projects/Validating Accounts/bin/Debug/net7.0/Validating Accounts.runtimeconfig.json
+/Users/samborathanak/Desktop/Projects/Validating Accounts/bin/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Validating Accounts/bin/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.csproj.AssemblyReference.cache
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.AssemblyInfoInputs.cache
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.AssemblyInfo.cs
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.csproj.CoreCompileInputs.cache
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/refint/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/Validating Accounts.genruntimeconfig.cache
+/Users/samborathanak/Desktop/Projects/Validating Accounts/obj/Debug/net7.0/ref/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Bank Transactions/bin/Debug/net7.0/Validating Accounts
+/Users/samborathanak/Desktop/Projects/Bank Transactions/bin/Debug/net7.0/Validating Accounts.deps.json
+/Users/samborathanak/Desktop/Projects/Bank Transactions/bin/Debug/net7.0/Validating Accounts.runtimeconfig.json
+/Users/samborathanak/Desktop/Projects/Bank Transactions/bin/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Bank Transactions/bin/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.csproj.AssemblyReference.cache
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.AssemblyInfoInputs.cache
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.AssemblyInfo.cs
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.csproj.CoreCompileInputs.cache
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/refint/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/Validating Accounts.genruntimeconfig.cache
+/Users/samborathanak/Desktop/Projects/Bank Transactions/obj/Debug/net7.0/ref/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/bin/Debug/net7.0/Validating Accounts
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/bin/Debug/net7.0/Validating Accounts.deps.json
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/bin/Debug/net7.0/Validating Accounts.runtimeconfig.json
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/bin/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/bin/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.csproj.AssemblyReference.cache
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.AssemblyInfoInputs.cache
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.AssemblyInfo.cs
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.csproj.CoreCompileInputs.cache
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/refint/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/Validating Accounts.genruntimeconfig.cache
+/Users/samborathanak/Desktop/Projects/Implementing multiple bank accounts/obj/Debug/net7.0/ref/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/bin/Debug/net7.0/Validating Accounts
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/bin/Debug/net7.0/Validating Accounts.deps.json
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/bin/Debug/net7.0/Validating Accounts.runtimeconfig.json
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/bin/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/bin/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.csproj.AssemblyReference.cache
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.AssemblyInfoInputs.cache
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.AssemblyInfo.cs
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.csproj.CoreCompileInputs.cache
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/refint/Validating Accounts.dll
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.pdb
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/Validating Accounts.genruntimeconfig.cache
+/Users/samborathanak/Desktop/Projects/Implementing Abstract Transactions/obj/Debug/net7.0/ref/Validating Accounts.dll
