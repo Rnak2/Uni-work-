@@ -1,0 +1,576 @@
+{
+	"id": "6c26797f-ad5e-45aa-aacc-e82ca5d11d0a",
+	"name": "RobotControllerAPI Tests",
+	"timestamp": "2025-05-13T16:21:26.619Z",
+	"collection_id": "43459915-41ad6c20-d3fd-4de6-bce6-6032eb3a61e8",
+	"folder_id": 0,
+	"environment_id": "43459915-33ea5c60-c42f-48ec-9884-af02ae892795",
+	"totalPass": 34,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-05-13T16:21:25.094Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "22371a95-f234-4dd6-8364-8e98b0e92aa9",
+			"name": "User login",
+			"url": "https://localhost:7124/users/login",
+			"time": 89,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 or Unauthorized": true,
+				"admin set in environment": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or Unauthorized": {
+					"pass": 1,
+					"fail": 0
+				},
+				"admin set in environment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				89
+			],
+			"allTests": [
+				{
+					"Status code is 200 or Unauthorized": true,
+					"admin set in environment": true
+				}
+			]
+		},
+		{
+			"id": "a643e28b-534d-4c4a-89fa-a826ebf56137",
+			"name": "User Registration Test",
+			"url": "https://localhost:7124/users",
+			"time": 49,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {
+				"User registration Status Code 200": true,
+				"user registration  response contains user details": true
+			},
+			"testPassFailCounts": {
+				"User registration Status Code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"user registration  response contains user details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				49
+			],
+			"allTests": [
+				{
+					"User registration Status Code 200": true,
+					"user registration  response contains user details": true
+				}
+			]
+		},
+		{
+			"id": "b9e6ce61-bc9b-44e8-979f-e6350085673a",
+			"name": "get all user",
+			"url": "https://localhost:7124/users",
+			"time": 43,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"get all users ": true,
+				"users in array": true
+			},
+			"testPassFailCounts": {
+				"get all users ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"users in array": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"get all users ": true,
+					"users in array": true
+				}
+			]
+		},
+		{
+			"id": "70702533-1f9c-4c57-b246-c995941bd34f",
+			"name": "Update user",
+			"url": "https://localhost:7124/users/email/testuser+1747153285575@deakin.edu.au",
+			"time": 88,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"user update ": true
+			},
+			"testPassFailCounts": {
+				"user update ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				88
+			],
+			"allTests": [
+				{
+					"user update ": true
+				}
+			]
+		},
+		{
+			"id": "94f94499-fd77-4720-ad2f-735b3428ba54",
+			"name": "Delete user",
+			"url": "https://localhost:7124/users/email/updatedtestuser+1747153285575@deakin.edu.au",
+			"time": 44,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"user deletion": true
+			},
+			"testPassFailCounts": {
+				"user deletion": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				44
+			],
+			"allTests": [
+				{
+					"user deletion": true
+				}
+			]
+		},
+		{
+			"id": "3c10dc26-8cce-4855-8b64-d1c87f09e7b2",
+			"name": "Get All Robot Commands",
+			"url": "https://localhost:7124/api/robot-commands",
+			"time": 50,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response body is an array": true,
+				"Each robot command has required properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each robot command has required properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				50
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response body is an array": true,
+					"Each robot command has required properties": true
+				}
+			]
+		},
+		{
+			"id": "9a06ffa5-2286-491b-b587-e7c13f822e4d",
+			"name": "Create Robot Command",
+			"url": "https://localhost:7124/api/robot-commands",
+			"time": 47,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response contains command details": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains command details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response contains command details": true
+				}
+			]
+		},
+		{
+			"id": "38435b1c-0e30-4a95-b970-c5ac3d3fea06",
+			"name": "Get Created Robot Command by ID",
+			"url": "https://localhost:7124/api/robot-commands/29",
+			"time": 48,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Command has correct ID": true,
+				"Command has required properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Command has correct ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Command has required properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				48
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Command has correct ID": true,
+					"Command has required properties": true
+				}
+			]
+		},
+		{
+			"id": "094f78ee-27a7-4aad-8ddd-cd01cfa6fbaf",
+			"name": "Delete Robot Command",
+			"url": "https://localhost:7124/api/robot-commands/29",
+			"time": 45,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Command no longer exists (404 Not Found)": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Command no longer exists (404 Not Found)": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				45
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Command no longer exists (404 Not Found)": true
+				}
+			]
+		},
+		{
+			"id": "2fc4d093-2eed-43bb-bbb8-243bf3890612",
+			"name": "Get all Maps",
+			"url": "https://localhost:7124/api/maps",
+			"time": 57,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response is an array": true,
+				"Each map object has required properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each map object has required properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				57
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response is an array": true,
+					"Each map object has required properties": true
+				}
+			]
+		},
+		{
+			"id": "f25ee159-980a-4f68-9cee-856867bc122a",
+			"name": "Create Map",
+			"url": "https://localhost:7124/api/maps",
+			"time": 46,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response body is not empty": true,
+				"Response body contains the newly created map": true,
+				"Check a newly created resource URL to be in the Location HTTP header": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body contains the newly created map": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Check a newly created resource URL to be in the Location HTTP header": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response body is not empty": true,
+					"Response body contains the newly created map": true,
+					"Check a newly created resource URL to be in the Location HTTP header": true
+				}
+			]
+		},
+		{
+			"id": "30100992-ae72-46aa-b8a3-7830af6f2061",
+			"name": "Get Created Map by ID",
+			"url": "https://localhost:7124/api/maps/33",
+			"time": 57,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Map has correct ID": true,
+				"Response body is not empty": true,
+				"Response contains all map properties": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Map has correct ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains all map properties": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				57
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Map has correct ID": true,
+					"Response body is not empty": true,
+					"Response contains all map properties": true
+				}
+			]
+		},
+		{
+			"id": "ee4bb9e0-2a46-4704-90f1-254b80387c93",
+			"name": "Update Map",
+			"url": "https://localhost:7124/api/maps/33",
+			"time": 47,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Updated Map - Status is successful": true,
+				"Updated Map details are correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated Map - Status is successful": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Updated Map details are correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				47
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Updated Map - Status is successful": true,
+					"Updated Map details are correct": true
+				}
+			]
+		},
+		{
+			"id": "df2914b0-07d3-4a15-be72-58294cbc2588",
+			"name": "Delete Map",
+			"url": "https://localhost:7124/api/maps/33",
+			"time": 43,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true,
+				"Verify map deletion": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify map deletion": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				43
+			],
+			"allTests": [
+				{
+					"Status code is 204": true,
+					"Verify map deletion": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 753,
+	"collection": {
+		"requests": [
+			{
+				"id": "22371a95-f234-4dd6-8364-8e98b0e92aa9",
+				"method": "POST"
+			},
+			{
+				"id": "a643e28b-534d-4c4a-89fa-a826ebf56137",
+				"method": "POST"
+			},
+			{
+				"id": "b9e6ce61-bc9b-44e8-979f-e6350085673a",
+				"method": "GET"
+			},
+			{
+				"id": "70702533-1f9c-4c57-b246-c995941bd34f",
+				"method": "PUT"
+			},
+			{
+				"id": "94f94499-fd77-4720-ad2f-735b3428ba54",
+				"method": "DELETE"
+			},
+			{
+				"id": "3c10dc26-8cce-4855-8b64-d1c87f09e7b2",
+				"method": "GET"
+			},
+			{
+				"id": "9a06ffa5-2286-491b-b587-e7c13f822e4d",
+				"method": "POST"
+			},
+			{
+				"id": "38435b1c-0e30-4a95-b970-c5ac3d3fea06",
+				"method": "GET"
+			},
+			{
+				"id": "094f78ee-27a7-4aad-8ddd-cd01cfa6fbaf",
+				"method": "DELETE"
+			},
+			{
+				"id": "2fc4d093-2eed-43bb-bbb8-243bf3890612",
+				"method": "GET"
+			},
+			{
+				"id": "f25ee159-980a-4f68-9cee-856867bc122a",
+				"method": "POST"
+			},
+			{
+				"id": "30100992-ae72-46aa-b8a3-7830af6f2061",
+				"method": "GET"
+			},
+			{
+				"id": "ee4bb9e0-2a46-4704-90f1-254b80387c93",
+				"method": "PUT"
+			},
+			{
+				"id": "df2914b0-07d3-4a15-be72-58294cbc2588",
+				"method": "DELETE"
+			}
+		]
+	}
+}

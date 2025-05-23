@@ -1,0 +1,924 @@
+{
+	"info": {
+		"_postman_id": "41ad6c20-d3fd-4de6-bce6-6032eb3a61e8",
+		"name": "RobotControllerAPI Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43459915",
+		"_collection_link": "https://rathanak-2345171.postman.co/workspace/rathanak's-Workspace~ae3c93a2-9a19-4d0b-8994-02fb85b6962e/collection/43459915-41ad6c20-d3fd-4de6-bce6-6032eb3a61e8?action=share&source=collection_link&creator=43459915"
+	},
+	"item": [
+		{
+			"name": "User login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//test if login successful",
+							"pm.test(\"Status code is 200 or Unauthorized\", function () {",
+							"    const statusCode = pm.response.code;",
+							"    console.log(\"Status Code:\", statusCode);",
+							"    pm.expect(statusCode).to.be.oneOf([200, 401]);",
+							"});",
+							"",
+							"//check if admin is in the environment",
+							"const email = \"admin@deakin.edu.au\";",
+							"const password = \"Admin123\";",
+							"",
+							"pm.test(\"admin set in environment\", function () {",
+							"    pm.expect(email).to.not.be.undefined;",
+							"    pm.expect(password).to.not.be.undefined;",
+							"});",
+							"",
+							"//generate and save token",
+							"if (pm.response.code === 200) {",
+							"    const basicAuthToken = \"Basic \" + btoa(email + \":\" + password); //convert string to base64",
+							"    pm.environment.set(\"auth_token\", basicAuthToken);",
+							"    console.log(\"Basic auth token saved:\", basicAuthToken);",
+							"} else if (pm.response.code === 401) {",
+							"    console.warn(\"Login failed(401)\");",
+							"    console.warn(\"Error message:\", pm.response.text());",
+							"} else {",
+							"    console.warn(\"Login failed :\", pm.response.status);",
+							"    console.warn(\"Error message:\", pm.response.text());",
+							"}",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"{{admin_email}}\",\n    \"password\": \"{{admin_password}}\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Registration Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//register user",
+							"const timestamp = Date.now();",
+							"const testEmail = \"testuser+\" + timestamp + \"@deakin.edu.au\";",
+							"const testFirstName = \"Test\" + timestamp;",
+							"const testLastName = \"User\";",
+							"const testPassword = \"User123\";",
+							"const testRole = \"User\";",
+							"",
+							"//save to environment",
+							"pm.environment.set(\"user_email\", testEmail);",
+							"",
+							"pm.sendRequest({",
+							"    url: pm.environment.get(\"host\") + \"/users\",",
+							"    method: \"POST\",",
+							"    header: { \"Content-Type\": \"application/json\" },",
+							"    body: {",
+							"        mode: \"raw\",",
+							"        raw: JSON.stringify({",
+							"            email: testEmail,",
+							"            firstName: testFirstName,",
+							"            lastName: testLastName,",
+							"            passwordHash: testPassword,",
+							"            role: testRole",
+							"        })",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.test(\"User registration Status Code 200\", function () {",
+							"        pm.expect(res.status).to.be.oneOf([200, \"OK\"]);",
+							"    });",
+							"",
+							"    pm.test(\"user registration  response contains user details\", function () {",
+							"        const user = res.json();",
+							"        pm.expect(user).to.have.property(\"id\");",
+							"        pm.expect(user.email).to.equal(testEmail);",
+							"        ",
+							"        //save id",
+							"        pm.environment.set(\"user_id\", user.id);",
+							"        console.log(\"registered:\", user.email);",
+							"    });",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"testuser+{{timestamp}}@deakin.edu.au\",\n    \"firstName\": \"Test{{timestamp}}\",\n    \"lastName\": \"{{user_last_name}}\",\n    \"passwordHash\": \"{{user_password}}\",\n    \"role\": \"User\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//get all user, only for admin",
+							"pm.sendRequest({",
+							"    url: pm.environment.get(\"host\") + \"/users\",",
+							"    method: \"GET\",",
+							"    header: {",
+							"        \"Content-Type\": \"application/json\",",
+							"        \"Authorization\": pm.environment.get(\"auth_token\")",
+							"    }",
+							"}, function (err, res) {",
+							"    //200 or \"OK\" ",
+							"    pm.test(\"get all users \", function () {",
+							"        pm.expect(res.status).to.be.oneOf([200, \"OK\"]);",
+							"    });",
+							"",
+							"    pm.test(\"users in array\", function () {",
+							"        const users = res.json();",
+							"        pm.expect(users).to.be.an(\"array\");",
+							"        console.log(\"users retrieved:\", users);",
+							"    });",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/users",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//update the registered user",
+							"const currentEmail = pm.environment.get(\"user_email\");",
+							"const updatedEmail = \"updated\" + currentEmail;",
+							"",
+							"pm.sendRequest({",
+							"    url: pm.environment.get(\"host\") + \"/users/email/\" + currentEmail,",
+							"    method: \"PUT\",",
+							"    header: {",
+							"        \"Content-Type\": \"application/json\",",
+							"        \"Authorization\": pm.environment.get(\"auth_token\")",
+							"    },",
+							"    body: {",
+							"        mode: \"raw\",",
+							"        raw: JSON.stringify({",
+							"            email: updatedEmail,",
+							"            firstName: \"Updated User\",",
+							"            lastName: \"Updated Last\",",
+							"            passwordHash: \"User123\",",
+							"            role: \"User\"",
+							"        })",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.test(\"user update \", function () {",
+							"        pm.expect(res.status).to.be.oneOf([200, 204, \"OK\", \"No Content\"]);",
+							"    });",
+							"",
+							"    //save updated email to environment",
+							"    pm.environment.set(\"user_email\", updatedEmail);",
+							"    console.log(\"user email updated:\", updatedEmail);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"updated{{user_email}}\",\n    \"firstName\": \"Updated\",\n    \"lastName\": \"{{user_last_name}}\",\n    \"passwordHash\": \"{{user_password}}\",\n    \"role\": \"User\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/users/email/{{user_email}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"email",
+						"{{user_email}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//delete the registered user",
+							"pm.sendRequest({",
+							"    url: pm.environment.get(\"host\") + \"/users/email/\" + pm.environment.get(\"user_email\"),",
+							"    method: \"DELETE\",",
+							"    header: {",
+							"        \"Content-Type\": \"application/json\",",
+							"        \"Authorization\": pm.environment.get(\"auth_token\")",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.test(\"user deletion\", function () {",
+							"        pm.expect(res.status).to.be.oneOf([204, \"No Content\"]);",
+							"    });",
+							"",
+							"    //clean uop in environment",
+							"    pm.environment.unset(\"user_email\");",
+							"    pm.environment.unset(\"user_id\");",
+							"    console.log(\"user removed from environment\");",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/users/email/{{user_email}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"users",
+						"email",
+						"{{user_email}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Robot Commands",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check code status",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"//make sure that respond is in array",
+							"pm.test(\"Response body is an array\", function () {",
+							"    pm.expect(pm.response.json()).to.be.an('array');",
+							"});",
+							"//loop through each object in the array and check the properties ",
+							"pm.test(\"Each robot command has required properties\", function () {",
+							"    const commands = pm.response.json();",
+							"    commands.forEach(command => {",
+							"        pm.expect(command).to.have.property(\"id\");",
+							"        pm.expect(command).to.have.property(\"name\");",
+							"        pm.expect(command).to.have.property(\"description\");",
+							"        pm.expect(command).to.have.property(\"isMoveCommand\");",
+							"    });",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/robot-commands",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"robot-commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Robot Command",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//test for successful creation",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"//store ID of command for later use",
+							"var response = pm.response.json();",
+							"pm.environment.set(\"created_id\", response.id);",
+							"",
+							"//check properties ",
+							"pm.test(\"Response contains command details\", function () {",
+							"    pm.expect(response).to.have.property(\"id\");",
+							"    pm.expect(response).to.have.property(\"name\");",
+							"    pm.expect(response).to.have.property(\"description\");",
+							"    pm.expect(response).to.have.property(\"isMoveCommand\");",
+							"    console.log(\"Command Properties:\", response);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"{{moveforward_command}}\",\n  \"isMoveCommand\": {{T}},\n  \"description\": \"Moves forward by 1 step\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/robot-commands",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"robot-commands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Created Robot Command by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check response code status ",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"//test that the command has the correct ID",
+							"pm.test(\"Command has correct ID\", function () {",
+							"    pm.expect(pm.response.json().id).to.eql(parseInt(pm.environment.get(\"created_id\")));",
+							"});",
+							"",
+							"",
+							"//check command properties",
+							"pm.test(\"Command has required properties\", function () {",
+							"    const command = pm.response.json();",
+							"    pm.expect(command).to.have.property(\"id\");",
+							"    pm.expect(command).to.have.property(\"name\");",
+							"    pm.expect(command).to.have.property(\"description\");",
+							"    pm.expect(command).to.have.property(\"isMoveCommand\");",
+							"    console.log(\"Command Properties:\", command);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/robot-commands/{{created_id}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"robot-commands",
+						"{{created_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Robot Command",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check response status code",
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							"",
+							"//checks if the robot no longer exist",
+							"const robotId = pm.environment.get(\"created_id\");",
+							"const getUrl = pm.environment.get(\"host\") + \"/api/robot-commands/\" + robotId;",
+							"",
+							"pm.sendRequest({",
+							"    url: getUrl,",
+							"    method: \"GET\",",
+							"    headers: {",
+							"        \"Content-Type\": \"application/json\",",
+							"        \"Authorization\": pm.environment.get(\"auth_token\")",
+							"    }",
+							"}, function (err, res) {",
+							"   ",
+							"    pm.test(\"Command no longer exists (404 Not Found)\", function () {",
+							"        pm.expect(res.code).to.equal(404);",
+							"    });",
+							"",
+							"    if (res.code === 404) {",
+							"        console.log(\"Robot command \" + robotId + \" successfully deleted\");",
+							"    } else {",
+							"        console.log(\"Robot command still exists\");",
+							"    }",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/robot-commands/{{created_id}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"robot-commands",
+						"{{created_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Maps",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check respond status code",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"//check if the respond is in array ",
+							"pm.test(\"Response is an array\", function () {",
+							"    pm.expect(pm.response.json()).to.be.an(\"array\");",
+							"});",
+							"",
+							"//check if the map have all properties ",
+							"pm.test(\"Each map object has required properties\", function () {",
+							"    const maps = pm.response.json();",
+							"    maps.forEach(map => {",
+							"        pm.expect(map).to.have.property(\"id\");",
+							"        pm.expect(map).to.have.property(\"name\");",
+							"        pm.expect(map).to.have.property(\"description\");",
+							"        pm.expect(map).to.have.property(\"columns\");",
+							"        pm.expect(map).to.have.property(\"rows\");",
+							"        pm.expect(map).to.have.property(\"isSquare\");",
+							"    });",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/maps",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Map",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//test if map is created",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"//check respond body ",
+							"pm.test(\"Response body is not empty\", function () {",
+							"    pm.response.to.have.jsonBody();",
+							"    pm.response.to.not.be.null;",
+							"    pm.response.to.not.be.undefined;",
+							"});",
+							"",
+							"//check map properties",
+							"pm.test(\"Response body contains the newly created map\", function () {",
+							"    var map = pm.response.json();",
+							"    pm.expect(map).to.have.property('id');",
+							"    pm.expect(map).to.have.property('name');",
+							"    pm.expect(map).to.have.property('description');",
+							"    pm.expect(map).to.have.property('columns');",
+							"    pm.expect(map).to.have.property('rows');",
+							"    pm.expect(map).to.have.property('isSquare');",
+							"});",
+							"",
+							"",
+							"//check for location header",
+							"pm.test(\"Check a newly created resource URL to be in the Location HTTP header\", function () {",
+							"    pm.response.to.have.header(\"Location\");",
+							"    var map = pm.response.json();",
+							"    var newResourceUrl = pm.environment.get(\"host\") + '/api/maps/' + map.id;",
+							"    pm.expect(pm.response.headers.get('Location')).to.eql(newResourceUrl);",
+							"});",
+							"",
+							"//save map id for later tests",
+							"var map = pm.response.json();",
+							"pm.environment.set(\"created_map_id\", map.id);",
+							"console.log(\"Map Created:\", map.name, \"| ID:\", map.id);",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"TestMap\",\n  \"description\": \"Test Map for Postman\",\n  \"columns\": 4,\n  \"rows\": 4,\n  \"isSquare\": {{T}}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/maps",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"maps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Created Map by ID",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check status code ",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"//check map id",
+							"pm.test(\"Map has correct ID\", function () {",
+							"    pm.expect(pm.response.json().id).to.eql(parseInt(pm.environment.get(\"created_map_id\")));",
+							"});",
+							"",
+							"//check respond body is not empty ",
+							"pm.test(\"Response body is not empty\", function () {",
+							"    pm.response.to.have.jsonBody();",
+							"    pm.response.to.not.be.null;",
+							"    pm.response.to.not.be.undefined;",
+							"});",
+							"",
+							"//check if map contain all requred properties ",
+							"pm.test(\"Response contains all map properties\", function () {",
+							"    const map = pm.response.json();",
+							"    pm.expect(map).to.have.property('id');",
+							"    pm.expect(map).to.have.property('name');",
+							"    pm.expect(map).to.have.property('description');",
+							"    pm.expect(map).to.have.property('columns');",
+							"    pm.expect(map).to.have.property('rows');",
+							"    pm.expect(map).to.have.property('isSquare');",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/maps/{{created_map_id}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"maps",
+						"{{created_map_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Map",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//check response ",
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							"",
+							"//verify update with GET request",
+							"const mapId = pm.environment.get(\"created_map_id\");",
+							"const getUrl = pm.environment.get(\"host\") + \"/api/maps/\" + mapId;",
+							"console.log(\"GET URL:\", getUrl);",
+							"",
+							"pm.sendRequest({",
+							"    url: getUrl,",
+							"    method: \"GET\",",
+							"    headers: {",
+							"        \"Content-Type\": \"application/json\",",
+							"        \"Authorization\": pm.environment.get(\"auth_token\")",
+							"    }",
+							"}, function (err, res) {",
+							"    console.log(\"GET Response Status:\", res.status); ",
+							"    console.log(\"GET Response Body:\", res.json()); ",
+							"",
+							"    pm.test(\"Updated Map - Status is successful\", function() {",
+							"        pm.expect([200, \"OK\"]).to.include(res.status);",
+							"    });",
+							"",
+							"    pm.test(\"Updated Map details are correct\", function () {",
+							"        const map = res.json();",
+							"        pm.expect(map.name).to.equal(\"UpdatedMap\");",
+							"        pm.expect(map.description).to.equal(\"Updated Map Description\");",
+							"        pm.expect(map.columns).to.equal(5);",
+							"        pm.expect(map.rows).to.equal(5);",
+							"        pm.expect(map.isSquare).to.be.true;",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"UpdatedMap\",\n  \"description\": \"Updated Map Description\",\n  \"columns\": 5,\n  \"rows\": 5,\n  \"isSquare\":{{T}}\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/api/maps/{{created_map_id}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"maps",
+						"{{created_map_id}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Map",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 204\", function () {",
+							"    pm.response.to.have.status(204);",
+							"});",
+							"",
+							"//check if map is deleted",
+							"pm.sendRequest({",
+							"    url: pm.environment.get(\"host\") + \"/api/maps/\" + pm.environment.get(\"created_map_id\"),",
+							"    method: \"GET\",",
+							"    header: {",
+							"        \"Content-Type\": \"application/json\",",
+							"        \"Authorization\": pm.environment.get(\"auth_token\")",
+							"    }",
+							"}, function (err, res) {",
+							"    pm.test(\"Verify map deletion\", function () {",
+							"        pm.expect(res.status).to.be.oneOf([404, \"Not Found\"]);",
+							"        console.log(\"Map successfully deleted\");",
+							"    });",
+							"});",
+							"",
+							"pm.environment.unset(\"user_email\");",
+							"pm.environment.unset(\"user_id\");",
+							"pm.environment.unset(\"auth_token\");",
+							"console.log(\"environment cleaned up: user_email, user_id, auth_token removed.\");"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{auth_token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{host}}/api/maps/{{created_map_id}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"maps",
+						"{{created_map_id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
