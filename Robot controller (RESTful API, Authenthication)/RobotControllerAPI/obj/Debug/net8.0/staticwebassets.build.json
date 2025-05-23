@@ -1,0 +1,1258 @@
+{
+  "Version": 1,
+  "Hash": "PI06/uEXooqa+BA+P66S6HwG3Q1Y1Xx5FbhJvZNo+sA=",
+  "Source": "RobotControllerAPI",
+  "BasePath": "_content/RobotControllerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RobotControllerAPI/wwwroot",
+      "Source": "RobotControllerAPI",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/images/deakin-logo.png",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "images/deakin-logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "shqkopkvov",
+      "Integrity": "IN8KYPXzf0tFQHrHGwFA3Pm5MiDT1cBccUdWcNoOpl4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/deakin-logo.png"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/robot.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/robot#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eidh2acalk",
+      "Integrity": "Wrf9OMRyXhTuX4Pe7cbUMoTDSlkbD9Nuf7hh7xYofG8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/robot.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-feeling-blue.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-feeling-blue#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "w3dhl7q6dh",
+      "Integrity": "ZNKgXXj23eD12dJubNwJtfxiYbMMnJPuz7vbOU3kmBg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-feeling-blue.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-flattop.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-flattop#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n2v1xeq61i",
+      "Integrity": "jyzK90srHk4cQdpbnoQpKqUdHgV9jRuoPJ2wsIHXxdw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-flattop.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-material.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-material#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "y354m41174",
+      "Integrity": "Ile6HQQ7f2WTQ1KHImYEMRAOfiqoz7sRkSFrmtUzqoU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-material.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-monokai.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-monokai#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ztoq639vv3",
+      "Integrity": "NwL5UeV8H1MzVUuK+8/wXUv7fEpe+/eK3rsGhFtUsuw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-monokai.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-muted.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-muted#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k0kuzhetng",
+      "Integrity": "LDhdA07tVLXe2ZGjW/K63dVAbRJ+n2QvNaE2JdRqZrI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-muted.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-newspaper.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-newspaper#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "voqtbgdh21",
+      "Integrity": "oZgKcHDK+tf0MTvZYqXJK5ZXBgXFaDT0vx/bgLzlXnI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-newspaper.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-outline.css",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "styles/theme-outline#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ayv4w6a1cl",
+      "Integrity": "wlIMnC2gMZUnchCUenaxM0BfYGvvahfWGzoSOHTsEbc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles/theme-outline.css"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-16x16.png",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "swagger/favicon-16x16#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pgobsibfwr",
+      "Integrity": "Zxtzn6at1JTuVqWcHraNyqQGQJ5UOJBYKs3/aS8AL80=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/swagger/favicon-16x16.png"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-32x32.png",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "swagger/favicon-32x32#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6cya8ttf2t",
+      "Integrity": "qgd29Hzn6xHuTplTL0VJ+dBqecxsh1FuUdn2T+PheqM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/swagger/favicon-32x32.png"
+    },
+    {
+      "Identity": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon.ico",
+      "SourceId": "RobotControllerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/",
+      "BasePath": "_content/RobotControllerAPI",
+      "RelativePath": "swagger/favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "koyquwyjkb",
+      "Integrity": "7I/ILuKQEjHgnIXITomHixTuSSmEuqb7BOyOO5VMbj4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/swagger/favicon.ico"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/deakin-logo.png",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/images/deakin-logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IN8KYPXzf0tFQHrHGwFA3Pm5MiDT1cBccUdWcNoOpl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 03:29:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IN8KYPXzf0tFQHrHGwFA3Pm5MiDT1cBccUdWcNoOpl4="
+        }
+      ]
+    },
+    {
+      "Route": "images/deakin-logo.shqkopkvov.png",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/images/deakin-logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5949"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IN8KYPXzf0tFQHrHGwFA3Pm5MiDT1cBccUdWcNoOpl4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 03:29:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "shqkopkvov"
+        },
+        {
+          "Name": "label",
+          "Value": "images/deakin-logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IN8KYPXzf0tFQHrHGwFA3Pm5MiDT1cBccUdWcNoOpl4="
+        }
+      ]
+    },
+    {
+      "Route": "styles/robot.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/robot.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wrf9OMRyXhTuX4Pe7cbUMoTDSlkbD9Nuf7hh7xYofG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 09:00:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wrf9OMRyXhTuX4Pe7cbUMoTDSlkbD9Nuf7hh7xYofG8="
+        }
+      ]
+    },
+    {
+      "Route": "styles/robot.eidh2acalk.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/robot.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Wrf9OMRyXhTuX4Pe7cbUMoTDSlkbD9Nuf7hh7xYofG8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 09:00:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eidh2acalk"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/robot.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Wrf9OMRyXhTuX4Pe7cbUMoTDSlkbD9Nuf7hh7xYofG8="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-feeling-blue.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-feeling-blue.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33537"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNKgXXj23eD12dJubNwJtfxiYbMMnJPuz7vbOU3kmBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNKgXXj23eD12dJubNwJtfxiYbMMnJPuz7vbOU3kmBg="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-feeling-blue.w3dhl7q6dh.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-feeling-blue.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33537"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZNKgXXj23eD12dJubNwJtfxiYbMMnJPuz7vbOU3kmBg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 08:39:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w3dhl7q6dh"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-feeling-blue.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZNKgXXj23eD12dJubNwJtfxiYbMMnJPuz7vbOU3kmBg="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-flattop.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-flattop.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jyzK90srHk4cQdpbnoQpKqUdHgV9jRuoPJ2wsIHXxdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 08:44:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jyzK90srHk4cQdpbnoQpKqUdHgV9jRuoPJ2wsIHXxdw="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-flattop.n2v1xeq61i.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-flattop.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33518"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jyzK90srHk4cQdpbnoQpKqUdHgV9jRuoPJ2wsIHXxdw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 19 Apr 2025 08:44:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n2v1xeq61i"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-flattop.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jyzK90srHk4cQdpbnoQpKqUdHgV9jRuoPJ2wsIHXxdw="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-material.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-material.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ile6HQQ7f2WTQ1KHImYEMRAOfiqoz7sRkSFrmtUzqoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ile6HQQ7f2WTQ1KHImYEMRAOfiqoz7sRkSFrmtUzqoU="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-material.y354m41174.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-material.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ile6HQQ7f2WTQ1KHImYEMRAOfiqoz7sRkSFrmtUzqoU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y354m41174"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-material.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ile6HQQ7f2WTQ1KHImYEMRAOfiqoz7sRkSFrmtUzqoU="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-monokai.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-monokai.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NwL5UeV8H1MzVUuK+8/wXUv7fEpe+/eK3rsGhFtUsuw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NwL5UeV8H1MzVUuK+8/wXUv7fEpe+/eK3rsGhFtUsuw="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-monokai.ztoq639vv3.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-monokai.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "36068"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NwL5UeV8H1MzVUuK+8/wXUv7fEpe+/eK3rsGhFtUsuw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ztoq639vv3"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-monokai.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NwL5UeV8H1MzVUuK+8/wXUv7fEpe+/eK3rsGhFtUsuw="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-muted.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-muted.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33516"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDhdA07tVLXe2ZGjW/K63dVAbRJ+n2QvNaE2JdRqZrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDhdA07tVLXe2ZGjW/K63dVAbRJ+n2QvNaE2JdRqZrI="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-muted.k0kuzhetng.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-muted.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33516"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDhdA07tVLXe2ZGjW/K63dVAbRJ+n2QvNaE2JdRqZrI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k0kuzhetng"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-muted.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDhdA07tVLXe2ZGjW/K63dVAbRJ+n2QvNaE2JdRqZrI="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-newspaper.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-newspaper.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oZgKcHDK+tf0MTvZYqXJK5ZXBgXFaDT0vx/bgLzlXnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oZgKcHDK+tf0MTvZYqXJK5ZXBgXFaDT0vx/bgLzlXnI="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-newspaper.voqtbgdh21.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-newspaper.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oZgKcHDK+tf0MTvZYqXJK5ZXBgXFaDT0vx/bgLzlXnI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:01:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "voqtbgdh21"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-newspaper.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oZgKcHDK+tf0MTvZYqXJK5ZXBgXFaDT0vx/bgLzlXnI="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-outline.ayv4w6a1cl.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-outline.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33161"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wlIMnC2gMZUnchCUenaxM0BfYGvvahfWGzoSOHTsEbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:02:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ayv4w6a1cl"
+        },
+        {
+          "Name": "label",
+          "Value": "styles/theme-outline.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wlIMnC2gMZUnchCUenaxM0BfYGvvahfWGzoSOHTsEbc="
+        }
+      ]
+    },
+    {
+      "Route": "styles/theme-outline.css",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-outline.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "33161"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wlIMnC2gMZUnchCUenaxM0BfYGvvahfWGzoSOHTsEbc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 11:02:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wlIMnC2gMZUnchCUenaxM0BfYGvvahfWGzoSOHTsEbc="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/favicon-16x16.pgobsibfwr.png",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zxtzn6at1JTuVqWcHraNyqQGQJ5UOJBYKs3/aS8AL80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 01:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pgobsibfwr"
+        },
+        {
+          "Name": "label",
+          "Value": "swagger/favicon-16x16.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zxtzn6at1JTuVqWcHraNyqQGQJ5UOJBYKs3/aS8AL80="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/favicon-16x16.png",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-16x16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Zxtzn6at1JTuVqWcHraNyqQGQJ5UOJBYKs3/aS8AL80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 01:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Zxtzn6at1JTuVqWcHraNyqQGQJ5UOJBYKs3/aS8AL80="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/favicon-32x32.6cya8ttf2t.png",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgd29Hzn6xHuTplTL0VJ+dBqecxsh1FuUdn2T+PheqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 01:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6cya8ttf2t"
+        },
+        {
+          "Name": "label",
+          "Value": "swagger/favicon-32x32.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgd29Hzn6xHuTplTL0VJ+dBqecxsh1FuUdn2T+PheqM="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/favicon-32x32.png",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-32x32.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "903"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgd29Hzn6xHuTplTL0VJ+dBqecxsh1FuUdn2T+PheqM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 01:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgd29Hzn6xHuTplTL0VJ+dBqecxsh1FuUdn2T+PheqM="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/favicon.ico",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7I/ILuKQEjHgnIXITomHixTuSSmEuqb7BOyOO5VMbj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 01:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7I/ILuKQEjHgnIXITomHixTuSSmEuqb7BOyOO5VMbj4="
+        }
+      ]
+    },
+    {
+      "Route": "swagger/favicon.koyquwyjkb.ico",
+      "AssetFile": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15406"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7I/ILuKQEjHgnIXITomHixTuSSmEuqb7BOyOO5VMbj4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 18 Aug 2022 01:39:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "koyquwyjkb"
+        },
+        {
+          "Name": "label",
+          "Value": "swagger/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7I/ILuKQEjHgnIXITomHixTuSSmEuqb7BOyOO5VMbj4="
+        }
+      ]
+    }
+  ]
+}

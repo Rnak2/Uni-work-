@@ -1,0 +1,23 @@
+.swagger-ui .topbar-wrapper::before {
+    content: "";
+    display: inline-block;
+    background-image: url("/images/deakin-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+
+.swagger-ui .topbar .topbar-wrapper > a:first-child {
+    display: none;
+}
+
+.swagger-ui .topbar .download-url-wrapper .select-label select {
+    border-color: #EF1C25;
+}
+
+.swagger-ui .info .title small:last-child {
+    background-color: #EF1C25 !important;
+}

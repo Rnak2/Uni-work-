@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RobotControllerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:robot_controller_api.Controllers.MapsController.GetAllMaps">
+            <summary>
+            Retrieves all maps
+            </summary>
+            <returns>list of map objects</returns>
+        </member>
+        <member name="M:robot_controller_api.Controllers.MapsController.GetSquareMaps">
+            <summary>
+            gets all square maps where the columns == row
+            </summary>
+            <returns> list of square map objects</returns>
+        </member>
+        <member name="M:robot_controller_api.Controllers.MapsController.GetMapById(System.Int32)">
+            <summary>
+            gets a map by its ID.
+            </summary>
+            <param name="id">The ID of the map</param>
+            <returns>The requested map if found</returns>
+            <response code="200">Map found</response>
+            <response code="404">Map not found</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.MapsController.AddMap(robot_controller_api.Map)">
+            <summary>
+            Creates a new map
+            </summary>
+            <param name="newMap">The map object to create</param>
+            <returns>The newly created map</returns>
+            <remarks>
+            Sample request:
+            
+                POST /api/maps
+                {
+                  "name": "TestMap",
+                  "description": "Testing layout",
+                  "columns": 4,
+                  "rows": 4,
+                  "isSquare": true
+                }
+            </remarks>
+            <response code="201">Map successfully created</response>
+            <response code="400">Invalid map data</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.MapsController.UpdateMap(System.Int32,robot_controller_api.Map)">
+            <summary>
+            Updates an existing map
+            </summary>
+            <param name="id">The ID of the map to update</param>
+            <param name="updatedMap">The updated map object</param>
+            <returns>No content if successful</returns>
+            <response code="204">Update successful</response>
+            <response code="404">Map not found</response>
+            <response code="500">Update failed on the server</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.MapsController.DeleteMap(System.Int32)">
+            <summary>
+            Deletes a map by ID
+            </summary>
+            <param name="id">The ID of the map to delete</param>
+            <returns>No content if deletion is successful</returns>
+            <response code="204">Map successfully deleted</response>
+            <response code="404">Map not found</response>
+            <response code="500">Deletion failed on the server</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.MapsController.CheckCoordinate(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Checks whether a coordinate (x, y) is inside the map bound
+            </summary>
+            <param name="id">The ID of the map</param>
+            <param name="x">The x coordinate</param>
+            <param name="y">The y coordinate</param>
+            <returns>True if coordinate is valid on the map; otherwise false</returns>
+            <response code="200">Coordinate check result</response>
+            <response code="400">Invalid coordinate values</response>
+            <response code="404">Map not found</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.RobotCommandsController.GetAllRobotCommands">
+            <summary>
+            Get all the robot commands.
+            </summary>
+            <returns>A list of RobotCommand objects.</returns>
+        </member>
+        <member name="M:robot_controller_api.Controllers.RobotCommandsController.GetMoveCommandsOnly">
+            <summary>
+            Get only the robot commands that are move based.
+            </summary>
+            <returns>A filtered list of RobotCommand where IsMoveCommand is true.</returns>
+        </member>
+        <member name="M:robot_controller_api.Controllers.RobotCommandsController.GetRobotCommandById(System.Int32)">
+            <summary>
+            Retrieves a specific robot command by its ID.
+            </summary>
+            <param name="id">The ID of the robot command.</param>
+            <returns>The matching ID of Robotcommand or 404 if not found.</returns>
+            <response code="200">Robot command found.</response>
+            <response code="404">Robot command not found.</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.RobotCommandsController.AddRobotCommand(robot_controller_api.RobotCommand)">
+            <summary>
+            Creates a robot command.
+            </summary>
+            <param name="newCommand">The robot command object from the client.</param>
+            <returns>The created RobotCommand object</returns>
+            <remarks>
+            Sample request:
+            
+                POST /api/robot-commands
+                {
+                  "name": "RUN",
+                  "isMoveCommand": true,
+                  "description": "Salsa on the Moon"
+                }
+            </remarks>
+            <response code="201">Successfully created</response>
+            <response code="400">Invalid request payload</response>
+            <response code="409">Duplicate command name</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.RobotCommandsController.UpdateRobotCommand(System.Int32,robot_controller_api.RobotCommand)">
+            <summary>
+            Updates an existing robot command by its ID.
+            </summary>
+            <param name="id">The ID of the command to update.</param>
+            <param name="updatedCommand">The updated Robotcommand.</param>
+            <returns>No content if successful or error status.</returns>
+            <response code="204">Successfully updated</response>
+            <response code="404">Command not found</response>
+            <response code="500">Update failed due to server error</response>
+        </member>
+        <member name="M:robot_controller_api.Controllers.RobotCommandsController.DeleteRobotCommand(System.Int32)">
+            <summary>
+            Deletes robot command by ID.
+            </summary>
+            <param name="id">The ID of the command to delete.</param>
+            <returns>No content if successful or error status.</returns>
+            <response code="204"> Deleted </response>
+            <response code="404">Command not found</response>
+            <response code="500">Delete failed due to server error</response>
+        </member>
+        <member name="M:RobotControllerApi.Controllers.UsersController.Register(UserModel)">
+            <summary>
+            Register a new user (hash password and save to DB)
+            </summary>
+        </member>
+        <member name="M:RobotControllerApi.Controllers.UsersController.Login(LoginModel)">
+            <summary>
+            Login with email and password
+            </summary>
+        </member>
+        <member name="M:RobotControllerApi.Controllers.UsersController.GetAll">
+            <summary>
+            Retrieve all users (admin only in production)
+            </summary>
+        </member>
+        <member name="M:RobotControllerApi.Controllers.UsersController.UpdateUserByEmail(System.String,UserModel)">
+            <summary>
+            Update user details (Admin Only)
+            </summary>
+        </member>
+        <member name="M:RobotControllerApi.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Delete user by ID (Admin Only)
+            </summary>
+        </member>
+        <member name="M:RobotControllerApi.Controllers.UsersController.DeleteUserByEmail(System.String)">
+            <summary>
+            Delete user by Email (Admin Only)
+            </summary>
+        </member>
+    </members>
+</doc>

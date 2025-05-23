@@ -1,0 +1,73 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/images/deakin-logo.png",
+      "PackagePath": "staticwebassets/images/deakin-logo.png"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/robot.css",
+      "PackagePath": "staticwebassets/styles/robot.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-feeling-blue.css",
+      "PackagePath": "staticwebassets/styles/theme-feeling-blue.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-flattop.css",
+      "PackagePath": "staticwebassets/styles/theme-flattop.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-material.css",
+      "PackagePath": "staticwebassets/styles/theme-material.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-monokai.css",
+      "PackagePath": "staticwebassets/styles/theme-monokai.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-muted.css",
+      "PackagePath": "staticwebassets/styles/theme-muted.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-newspaper.css",
+      "PackagePath": "staticwebassets/styles/theme-newspaper.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/styles/theme-outline.css",
+      "PackagePath": "staticwebassets/styles/theme-outline.css"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-16x16.png",
+      "PackagePath": "staticwebassets/swagger/favicon-16x16.png"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon-32x32.png",
+      "PackagePath": "staticwebassets/swagger/favicon-32x32.png"
+    },
+    {
+      "Id": "/Users/samborathanak/Desktop/SIT331/6.1/RobotControllerAPI/wwwroot/swagger/favicon.ico",
+      "PackagePath": "staticwebassets/swagger/favicon.ico"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RobotControllerAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.RobotControllerAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.RobotControllerAPI.props",
+      "PackagePath": "build\\RobotControllerAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.RobotControllerAPI.props",
+      "PackagePath": "buildMultiTargeting\\RobotControllerAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.RobotControllerAPI.props",
+      "PackagePath": "buildTransitive\\RobotControllerAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
